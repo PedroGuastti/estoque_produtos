@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Estoque</title>
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="menu">
+        <a class="ativo" href="#">Início</a>
+        <a href = "#produtos">Produtos</a>
+    </div>
+
+    <div class="form">
+
+        <form name="formProduto">
+
+            <fieldset>
+
+                <legend>Cadastro de Produtos</legend>
+
+                    <div class="formGroup">
+                        <label>Código</label>
+                        <input class="input-control" type="number" size="5" id="codigo" />  
+
+                        <label class ="right-inline">Nome Produto</label>
+                        <input class="input-control" type="text" size="50" id="produto" />  
+
+                        <label class="right-inline">Quantidade Estoque</label>
+                        <input class="input-control" type="number" size="5" id="estoque" />                         
+                    </div>
+                    <div class=formGroup>
+                        <label>Andar Prédio</label>
+                        <input class="input-control" type="text" size="40" id="andar"/>
+
+                        <label class ="right-inline">Corredor</label>
+                        <input class="input-control" type="text" size="20" id="corredor"/>
+
+                        <label class ="right-inline">Armário</label>
+                        <input class="input-control" type="text" size="20" id="armario"/>
+
+                    </div>
+                    <div class="formGroup">
+                        <label>Observações</label>
+                        <textarea class="input-control" id="observacoes"></textarea>
+
+                    </div>
+                    <div class="formGroup">
+                        <label></label>
+                        <button id="salvar">✔️ Salvar</button>
+                        <button id="cancelar"> ❌ Cancelar </button>
+                    </div>
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="listagem">
+    </div>
+
+
+    <script src="produto.js"></script>
+</body>
+</html>
